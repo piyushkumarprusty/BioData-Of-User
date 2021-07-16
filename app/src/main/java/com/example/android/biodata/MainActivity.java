@@ -1,5 +1,6 @@
 package com.example.android.biodata;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -30,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void bucheck(View view) {
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setMessage("Are you sure to save")
+                .setTitle("Confirmation");
+
         String Result = "";
         if (checkBoxstatus.isChecked()) {
             Result = "  He is married";
@@ -37,18 +42,17 @@ public class MainActivity extends AppCompatActivity {
             Result = "  He is not married";
         }
         if ((rbmale.isChecked())) {
-            Result += " Also he is male";
+            Result += "  Also he is male";
         } else {
-            Result += " Also she is female";
+            Result += "  Also she is female";
         }
         if (swGrade.isChecked()) {
             Result += "  Also student is grade";
         } else {
             Result += " A lso student is not grade";
         }
-
         tvDisplay.setText(Result);
-
+// alert
 
 
     }
