@@ -1,0 +1,2 @@
+rootProject.name = "BioData"
+include ':app'
