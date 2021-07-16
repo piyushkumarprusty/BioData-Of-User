@@ -3,6 +3,7 @@ package com.example.android.biodata;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -31,29 +32,42 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void bucheck(View view) {
-        AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        alert.setMessage("Are you sure to save")
-                .setTitle("Confirmation");
+
 
         String Result = "";
         if (checkBoxstatus.isChecked()) {
-            Result = "  He is married";
+            Result = "  He is married" ;
         } else {
-            Result = "  He is not married";
+            Result = "  He is not married" ;
         }
         if ((rbmale.isChecked())) {
-            Result += "  Also he is male";
+            Result += "  Also he is male" ;
         } else {
-            Result += "  Also she is female";
+            Result += "  Also she is female" ;
         }
         if (swGrade.isChecked()) {
-            Result += "  Also student is grade";
+            Result += "  Also student is grade" ;
         } else {
-            Result += " A lso student is not grade";
+            Result += "  Also student is not grade" ;
         }
-        tvDisplay.setText(Result);
-// alert
+
+        tvDisplay.setText(Result) ;
+
+        // Alert
 
 
+    }
+
+    public void alertt(View view) {
+
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setMessage("Are you sure to save")
+                .setTitle("Confirmation")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
     }
 }
