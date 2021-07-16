@@ -24,7 +24,7 @@
                 android:text="Status:" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkBoxstatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -50,7 +50,7 @@
                 android:layout_weight="1">
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/rbmale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -58,7 +58,7 @@
                     android:text="Male" />
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/rbfemale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -80,7 +80,7 @@
                 android:text="is Grade" />
 
             <Switch
-                android:id="@+id/switch1"
+                android:id="@+id/switchGrade"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -97,7 +97,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Check now" />
+                android:text="Check now"
+                android:onClick="bucheck"/>
         </LinearLayout>
 
         <LinearLayout
