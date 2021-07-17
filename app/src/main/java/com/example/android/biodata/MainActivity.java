@@ -71,8 +71,5 @@ public class MainActivity extends AppCompatActivity {
                 .show();
     }
 
-    public void alertt(View view) {
 
-
-    }
 }

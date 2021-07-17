@@ -115,13 +115,7 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/alert"
-            android:layout_width="98dp"
-            android:layout_height="305dp"
-            android:layout_weight="1"
-            android:text="Alert"
-            android:onClick="alertt"/>
+
 
     </LinearLayout>
 </RelativeLayout>
