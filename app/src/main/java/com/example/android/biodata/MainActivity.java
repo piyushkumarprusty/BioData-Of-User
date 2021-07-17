@@ -10,6 +10,7 @@ import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import java.sql.ResultSet;
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
+                        Toast.makeText(MainActivity.this, "Again give input", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .show();
