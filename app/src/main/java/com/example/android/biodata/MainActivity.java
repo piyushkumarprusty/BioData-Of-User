@@ -34,15 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void bucheck(View view) {
 
-
-
-
         // Alert
-
-
-    }
-
-    public void alertt(View view) {
 
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setMessage("Are you sure to save")
@@ -77,5 +69,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                 })
                 .show();
+    }
+
+    public void alertt(View view) {
+
+
     }
 }
