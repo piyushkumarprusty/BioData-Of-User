@@ -36,22 +36,22 @@ public class MainActivity extends AppCompatActivity {
 
         String Result = "";
         if (checkBoxstatus.isChecked()) {
-            Result = "  He is married" ;
+            Result = "  He is married";
         } else {
-            Result = "  He is not married" ;
+            Result = "  He is not married";
         }
         if ((rbmale.isChecked())) {
-            Result += "  Also he is male" ;
+            Result += "  Also he is male";
         } else {
-            Result += "  Also she is female" ;
+            Result += "  Also she is female";
         }
         if (swGrade.isChecked()) {
-            Result += "  Also student is grade" ;
+            Result += "  Also student is grade";
         } else {
-            Result += "  Also student is not grade" ;
+            Result += "  Also student is not grade";
         }
 
-        tvDisplay.setText(Result) ;
+        tvDisplay.setText(Result);
 
         // Alert
 
@@ -68,6 +68,13 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
 
                     }
-                });
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                })
+                .show();
     }
 }
