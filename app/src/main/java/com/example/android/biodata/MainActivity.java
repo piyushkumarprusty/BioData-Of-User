@@ -34,24 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public void bucheck(View view) {
 
 
-        String Result = "";
-        if (checkBoxstatus.isChecked()) {
-            Result = "  He is married";
-        } else {
-            Result = "  He is not married";
-        }
-        if ((rbmale.isChecked())) {
-            Result += "  Also he is male";
-        } else {
-            Result += "  Also she is female";
-        }
-        if (swGrade.isChecked()) {
-            Result += "  Also student is grade";
-        } else {
-            Result += "  Also student is not grade";
-        }
 
-        tvDisplay.setText(Result);
 
         // Alert
 
@@ -66,7 +49,24 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        String Result = "";
+                        if (checkBoxstatus.isChecked()) {
+                            Result = "  He is married";
+                        } else {
+                            Result = "  He is not married";
+                        }
+                        if ((rbmale.isChecked())) {
+                            Result += "  Also he is male";
+                        } else {
+                            Result += "  Also she is female";
+                        }
+                        if (swGrade.isChecked()) {
+                            Result += "  Also student is grade";
+                        } else {
+                            Result += "  Also student is not grade";
+                        }
 
+                        tvDisplay.setText(Result);
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
